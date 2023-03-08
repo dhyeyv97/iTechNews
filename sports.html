@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iTech Today</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="NewsWeb.css">
+    <link rel="stylesheet" href="NewsWeb.res.css">
+    <link rel="icon" type="image/png" href="./ilogo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+</head>
+
+<body>
+
+
+
+    <!--Navbar-->
+    <div class="bigNav bg-dark">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid ">
+                        <a class="navbar-brand nav1" href="NewsWeb.html" data-toggle="tooltip" data-placement="bottom"
+                            title="Home Page" id="home">iTechNews</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                            <ul class="navbar-nav me-auto mb-2 ft-link mb-l ft-link g-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                                        title="General News" aria-current="page" href="general.html"
+                                        id="general">GENERAL</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                                        title="Business News" href="business.html" id="business">BUSINESS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                                        title="Sports News" href="sports.html" id="sports">SPORTS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                                        title="Entertainment News" href="entertainment.html"
+                                        id="entertainment">ENTERTAINMENT</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                                        title="Technology News" href="technology.html" id="technology">TECHNOLOGY</a>
+                                </li>
+                            </ul>
+                            <div class="div-form">
+                                <form class="d-flex nav-form">
+                                    <input class="form-control inp_color me-2" type="text" id="newsQuery"
+                                        placeholder="Search News" aria-label="Search">
+                                    <button class="btn btn-outline-warning" class="search-btn" type="button"
+                                        id="searchBtn">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container my-3">
+        <h3 id="headMain" class="headline-1">Top Headlines by <span class="badge bg-secondary ba-clr"> iTechNews</span>
+        </h3>
+    </div>
+
+    <!--Main Body section-->
+    <div class="container">
+        <div class="row my-5 responsive_div">
+
+
+            <div class="col-lg-3 item-1">
+                <div class="heading-news badge bg-dark my-2 mx-2">Social news</div>
+                <div id="leftCard" class="card-1" style="width: 100%;">
+                </div>
+
+            </div>
+
+            <div class="col-lg-6 d-flex justify-content-center item-2">
+
+                <div id="newsCard" class="card-2" style="width: 100%;">
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 item-3">
+                <div class="heading-news badge bg-dark my-2">Health News</div>
+                <div id="rightCard" class="card-3" style="width: 100%;">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--Footer-->
+    <footer class="bd-footer py-5 mt-5 bg-dark">
+        <div class="container py-5">
+            <div class="row foot_respo">
+
+                <div class="col-lg-3 mb-3 ft-link i-1">
+                    <a class="d-inline-flex align-items-center mb-2 ft-link link-dark text-decoration-none" href=""
+                        aria-label="bootstrap">
+                        <span class="ft-title">iTechNews</span>
+                    </a>
+                    <div class="ft-des ">
+                        India's Leading News Website which keeps you Updated throughout. iTechNews's Sole purpose is to
+                        Spread knowledge and Understading
+                        to every citizen of the country through its Easy accessible Website and mobile applications.
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3 ft-link i-2">
+                    <ul class="list-unstyled">
+                        <li class="mb-2 ft-main">About Us</li>
+                        <li class="mb-2 ft-link">Contact Us</li>
+                        <li class="mb-2 ft-link">Terms of Use</li>
+                        <li class="mb-2 ft-link">Privacy Policy</li>
+                        <li class="mb-2 ft-link">iTech NewsLetters</li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2 mb-3 ft-link i-3">
+                    <ul class="list-unstyled">
+                        <li class="mb-2 ft-main">Subscription</li>
+                        <li class="mb-2 ft-link">Disclaimer</li>
+                        <li class="mb-2 ft-link">Print Ad Rates</li>
+                        <li class="mb-2 ft-link">Code Of Ethics</li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2 mb-3 ft-link i-4">
+                    <ul class="list-unstyled">
+                        <li class="mb-2 ft-main">RSS</li>
+                        <li class="mb-2 ft-link">e-Paper</li>
+                        <li class="mb-2 ft-link">Feedback</li>
+                        <li class="mb-2 ft-link">Archives</li>
+                        <li class="mb-2 ft-link">Advertise With us</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3 ft-link i-5">
+                    <div class="footi">
+                        <ul class="ul-ic list-unstyled">
+                            <li class="mb-2 ft-main">Social Media</li>
+                            <li class="mb-2 ft-link">
+                                <a href="#" class="footer_social_media_icon"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+
+                            <li class="mb-2 ft-link">
+                                <a href="#" class="footer_social_media_icon"><i class="fab fa-instagram"></i></a>
+                            </li>
+
+                            <li class="mb-2 ft-link"><a href="#" class="footer_social_media_icon"><i
+                                        class="fab fa-linkedin-in"></i></a></li>
+                            <li class="mb-2 ft-link"><a href="#" class="footer_social_media_icon"><i
+                                        class="fab fa-dribbble"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 footer_credits text-center">
+            <span>&copy; 2022 <a href="#" target="_blank" class="credlink" title="iTechNews">iTechNews</a>& trade;.
+                All Rights
+                Reserved. </span>
+        </div>
+
+    </footer>
+
+
+
+
+    <script src="sports.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <!--Bootstap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
